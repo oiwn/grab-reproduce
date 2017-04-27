@@ -9,6 +9,10 @@ encoding error : input conversion failed due to input error, bytes 0x21 0x00 0x0
 lxml.etree.XMLSyntaxError: switching encoding: encoder error, line 1, column 1
 ```
 
+Solution found:
+
+https://github.com/lorien/grab/issues/199#issuecomment-297721800
+
 ### How to reproduce
 
 Python
@@ -36,3 +40,5 @@ python github.py
 ## Note
 
 On Python 2.7.13 everything running without any errors.
+
+Checked lxml versions `3.7.0` `3.6.0` `3.5.0` same error.
